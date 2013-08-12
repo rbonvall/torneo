@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th>Local</th>
+      <th>Visita</th>
+      <th>Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-ng-repeat="match in tournament.matches">
+      <td data-ng-bind="tournament.teams[match.teams[0]]"></td>
+      <td data-ng-bind="tournament.teams[match.teams[1]]"></td>
+      <td data-ng-bind="match | matchScore"></td>
+    </tr>
+  </tbody>
+</table>
+
