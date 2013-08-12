@@ -2,11 +2,11 @@
 
     app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
-            .when('/matches'     , { templateUrl: 'partials/matches.html'  , controller: 'MatchesController'   })
+            .when('/matches'     , { templateUrl: 'partials/matches.html'   , controller: 'MatchesController'   })
+            .when('/stats'       , { templateUrl: 'partials/stats.html'     , controller: 'StatsController'     })
             // .when('/summary'  , { templateUrl: 'partials/summary.html'  , controller: 'SummaryController'   })
-            // .when('/standings', { templateUrl: 'partials/standings.html', controller: 'StandingsController' })
             // .when('/matrix'   , { templateUrl: 'partials/matrix.html'   , controller: 'MatrixController'    })
-            .otherwise({ redirectTo: '/matches' })
+            .otherwise({ redirectTo: '/stats' })
             ;
     }]);
 
@@ -17,6 +17,26 @@
     app.controller('MatchesController', ['$scope', 'Tournament', function ($scope, Tournament) {
         $scope.tournament = Tournament.query();
     }]);
+
+    app.controller('StatsController', function ($scope, Tournament) {
+        $scope.tournament = Tournament.query(function (response) {
+            $scope.stats = computeStats(response);
+            $scope.sortedTeams = sortedTeams($scope.stats);
+            $scope.matchesByTeam = matchesByTeam(response);
+            $scope.infoFor = infoFor;
+            $scope.nrMatchdays = numberOfMatchdays(response);
+            console.log($scope.nrMatchdays);
+        });
+        $scope.boxColorHue = {home: 210, away: 30};
+    });
+
+    app.filter('signed', function () {
+        return function (input) {
+            if      (input > 0) { return "+" + input; }
+            else if (input < 0) { return "−" + -input; }
+            else                { return input.toString(); }
+        };
+    });
 
     app.filter('matchScore', function () {
         return function (match) {

@@ -1,0 +1,57 @@
+<table class="large-8 columns">
+  <thead>
+    <tr>
+      <th colspan="3" class="headerGroup">
+      <th colspan="3" class="headerGroup">Partidos
+      <th colspan="2" class="headerGroup">Goles
+      <th colspan="1">
+    </tr>
+    <tr>
+      <th>Equipo
+      <th>Pts.
+      <th>Dif.
+      <th>G
+      <th>E
+      <th>P
+      <th>F
+      <th>C
+      <th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-ng-repeat="team in sortedTeams">
+      <td               data-ng-bind="tournament.teams[team]">
+      <td align="right" data-ng-bind="stats[team].matches.won * 3 + stats[team].matches.drawn">
+      <td align="right" data-ng-bind="stats[team].goals.for_ - stats[team].goals.against | signed">
+
+      <td align="right" data-ng-bind="stats[team].matches.won">
+      <td align="right" data-ng-bind="stats[team].matches.drawn">
+      <td align="right" data-ng-bind="stats[team].matches.lost">
+
+      <td align="right" data-ng-bind="stats[team].goals.for_">
+      <td align="right" data-ng-bind="stats[team].goals.against">
+      <td>
+        <svg xmlns="http://www.w3.org/2000/svg" width="{{ 10 * nrMatchdays - 2 }}" height="16">
+          <g>
+            <g data-ng-repeat="m in matchesByTeam[team]">
+              <rect x="{{ (m.matchday - 1) * 10 }}" y="0"
+                    width="8" height="16"
+                    style="fill: hsl({{ boxColorHue[infoFor(team, m).where] }}, 30%, 85%);">
+              </rect>
+              <rect x="{{ (m.matchday - 1) * 10 }}"
+                    y="{{ 15 - infoFor(team, m).pts * 5 }}"
+                    width="8" height="{{ 1 + infoFor(team, m).pts * 5 }}"
+                    data-ng-show="m.score"
+                    style="fill: hsl({{ boxColorHue[infoFor(team, m).where] }}, 90%, 25%);">
+              </rect>
+            </g>
+          </g>
+        </svg>
+      </td>
+      <!-- <td> -->
+      <!--   <span data&#45;ng&#45;repeat="m in matchesByTeam[team]">{{ infoFor(team, m).pts }}</span> -->
+      <!-- </td> -->
+    </tr>
+  </tbody>
+</table>
+
