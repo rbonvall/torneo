@@ -1,6 +1,7 @@
-<table class="large-4 columns">
+<table class="large-5 columns">
   <tbody>
     <tr data-ng-repeat="match in tournament.matches">
+      <td data-ng-bind="match.kickoff | kickoff"></td>
       <td data-ng-bind="tournament.teams[match.teams[0]]"></td>
       <td data-ng-bind="tournament.teams[match.teams[1]]"></td>
       <td data-ng-bind="match | matchScore"></td>

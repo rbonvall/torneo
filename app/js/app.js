@@ -47,11 +47,18 @@
             if (s.length === 2) {
                 return s.join("–");
             }
-            if (match.kickoff) {
-                var d = new Date(match.kickoff);
-                return d.getDate() + "/" + (d.getMonth() + 1);
+            return "";
+        };
+    });
+
+    app.filter('kickoff', function () {
+        return function (kickoff) {
+            if (!kickoff) {
+                return "";
             }
-            return "•";
+            var months = 'ene feb mar abr may jun jul ago sep oct nov dic'.split(/ /);
+            var d = new Date(kickoff);
+            return d.getDate() + " " + months[d.getMonth()];
         };
     });
 
