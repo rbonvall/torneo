@@ -25,3 +25,7 @@ table .graph-cell {
 table .first-of-group {
     padding-left: 2em;
 }
+.kickoff-date {
+    color: hsl(0, 0%, 60%);
+    font-size: smaller;
+}
