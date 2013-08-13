@@ -1,35 +1,35 @@
 <table class="large-8 columns">
   <thead>
     <tr>
-      <th colspan="3" class="headerGroup">
-      <th colspan="3" class="headerGroup">Partidos
-      <th colspan="2" class="headerGroup">Goles
-      <th colspan="1">
+      <th colspan="3" class="headerGroup"></th>
+      <th colspan="3" class="headerGroup">Partidos</th>
+      <th colspan="2" class="headerGroup">Goles</th>
+      <th colspan="1"></th>
     </tr>
     <tr>
-      <th>Equipo
-      <th>Pts.
-      <th>Dif.
-      <th>G
-      <th>E
-      <th>P
-      <th>F
-      <th>C
-      <th>
+      <th>Equipo</th>
+      <th>Pts.</th>
+      <th>Dif.</th>
+      <th>G</th>
+      <th>E</th>
+      <th>P</th>
+      <th>F</th>
+      <th>C</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr data-ng-repeat="team in sortedTeams">
-      <td               data-ng-bind="tournament.teams[team]">
-      <td align="right" data-ng-bind="stats[team].matches.won * 3 + stats[team].matches.drawn">
-      <td align="right" data-ng-bind="stats[team].goals.for_ - stats[team].goals.against | signed">
+      <td               data-ng-bind="tournament.teams[team]"></td>
+      <td align="right" data-ng-bind="stats[team].matches.won * 3 + stats[team].matches.drawn"></td>
+      <td align="right" data-ng-bind="stats[team].goals.for_ - stats[team].goals.against | signed"></td>
 
-      <td align="right" data-ng-bind="stats[team].matches.won">
-      <td align="right" data-ng-bind="stats[team].matches.drawn">
-      <td align="right" data-ng-bind="stats[team].matches.lost">
+      <td align="right" data-ng-bind="stats[team].matches.won"></td>
+      <td align="right" data-ng-bind="stats[team].matches.drawn"></td>
+      <td align="right" data-ng-bind="stats[team].matches.lost"></td>
 
-      <td align="right" data-ng-bind="stats[team].goals.for_">
-      <td align="right" data-ng-bind="stats[team].goals.against">
+      <td align="right" data-ng-bind="stats[team].goals.for_"></td>
+      <td align="right" data-ng-bind="stats[team].goals.against"></td>
       <td>
         <svg xmlns="http://www.w3.org/2000/svg" width="{{ 10 * nrMatchdays - 2 }}" height="16">
           <g>
