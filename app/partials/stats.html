@@ -1,36 +1,38 @@
-<table class="large-8 columns">
+<!-- <table class="large&#45;8 columns"> -->
+<table class="">
   <thead>
     <tr>
-      <th colspan="3" class="headerGroup"></th>
-      <th colspan="3" class="headerGroup">Partidos</th>
-      <th colspan="2" class="headerGroup">Goles</th>
-      <th colspan="1"></th>
-    </tr>
-    <tr>
-      <th>Equipo</th>
-      <th>Pts.</th>
-      <th>Dif.</th>
-      <th>G</th>
-      <th>E</th>
-      <th>P</th>
-      <th>F</th>
-      <th>C</th>
-      <th></th>
+      <th class="number-cell"></th>
+      <th class="text-cell">Equipo</th>
+      <th class="number-cell">PJ</th>
+      <th class="number-cell">Pts</th>
+      <th class="number-cell">Dif</th>
+      <th class="number-cell first-of-group">G</th>
+      <th class="number-cell">E</th>
+      <th class="number-cell">P</th>
+      <th class="number-cell first-of-group">F</th>
+      <th class="number-cell">C</th>
+      <th class="number-cell first-of-group">Rend</th>
+      <th class="first-of-group"></th>
     </tr>
   </thead>
   <tbody>
     <tr data-ng-repeat="team in sortedTeams">
-      <td               data-ng-bind="tournament.teams[team]"></td>
-      <td align="right" data-ng-bind="stats[team].matches.won * 3 + stats[team].matches.drawn"></td>
-      <td align="right" data-ng-bind="stats[team].goals.for_ - stats[team].goals.against | signed"></td>
+      <td class="number-cell" data-ng-bind="$index + 1"></td>
+      <td class="text-cell"   data-ng-bind="tournament.teams[team]"></td>
+      <td class="number-cell" data-ng-bind="_(stats[team].matches).reduce(add)"></td>
+      <td class="number-cell" data-ng-bind="stats[team].matches.won * 3 + stats[team].matches.drawn"></td>
+      <td class="number-cell" data-ng-bind="stats[team].goals.for_ - stats[team].goals.against | signed"></td>
 
-      <td align="right" data-ng-bind="stats[team].matches.won"></td>
-      <td align="right" data-ng-bind="stats[team].matches.drawn"></td>
-      <td align="right" data-ng-bind="stats[team].matches.lost"></td>
+      <td class="number-cell first-of-group" data-ng-bind="stats[team].matches.won"></td>
+      <td class="number-cell"                data-ng-bind="stats[team].matches.drawn"></td>
+      <td class="number-cell"                data-ng-bind="stats[team].matches.lost"></td>
 
-      <td align="right" data-ng-bind="stats[team].goals.for_"></td>
-      <td align="right" data-ng-bind="stats[team].goals.against"></td>
-      <td>
+      <td class="number-cell first-of-group" data-ng-bind="stats[team].goals.for_"></td>
+      <td class="number-cell"                data-ng-bind="stats[team].goals.against"></td>
+
+      <td class="number-cell first-of-group" data-ng-bind="'12.34%'"></td>
+      <td class="graph-cell">
         <svg xmlns="http://www.w3.org/2000/svg" width="{{ 10 * nrMatchdays - 2 }}" height="16">
           <g>
             <g data-ng-repeat="m in matchesByTeam[team]">
