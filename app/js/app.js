@@ -64,4 +64,10 @@
         };
     });
 
+    app.filter('percent', function () {
+        return function (x) {
+            return "" + (100 * x).toFixed(2) + "%";
+        };
+    });
+
 })(angular.module('TorneoApp', ['ngResource']));
