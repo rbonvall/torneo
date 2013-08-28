@@ -20,7 +20,7 @@
     <tr data-ng-repeat="team in sortedTeams">
       <td class="number-cell" data-ng-bind="$index + 1"></td>
       <td class="text-cell"   data-ng-bind="tournament.teams[team]"></td>
-      <td class="number-cell" data-ng-bind="_(stats[team].matches).reduce(add)"></td>
+      <td class="number-cell" data-ng-bind="stats[team].matches.played()"></td>
       <td class="number-cell" data-ng-bind="stats[team].matches.won * 3 + stats[team].matches.drawn"></td>
       <td class="number-cell" data-ng-bind="stats[team].goals.for_ - stats[team].goals.against | signed"></td>
 
@@ -31,7 +31,7 @@
       <td class="number-cell first-of-group" data-ng-bind="stats[team].goals.for_"></td>
       <td class="number-cell"                data-ng-bind="stats[team].goals.against"></td>
 
-      <td class="number-cell first-of-group" data-ng-bind="'12.34%'"></td>
+      <td class="number-cell first-of-group" data-ng-bind="stats[team].rend() | percent"></td>
       <td class="graph-cell">
         <svg xmlns="http://www.w3.org/2000/svg" width="{{ 10 * nrMatchdays - 2 }}" height="16">
           <g>
