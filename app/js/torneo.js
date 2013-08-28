@@ -1,7 +1,21 @@
 var initialStats = function () {
     return {
         goals:   { for_: 0, against: 0 },
-        matches: { won: 0, drawn: 0, lost: 0 }
+        matches: { won: 0, drawn: 0, lost: 0, notPlayed: 0,
+            played: function () {
+                return this.won + this.drawn + this.lost;
+            }
+        },
+
+        pts: function () {
+            return 3 * this.matches.won + this.matches.drawn;
+        },
+        diff: function () {
+            return this.goals.for_ - this.goals.against;
+        },
+        rend: function () {
+            return this.pts() / (3 * this.matches.played());
+        }
     };
 };
 
@@ -14,12 +28,17 @@ var computeStats = function (tournament) {
     });
 
     _(tournament.matches).each(function (match) {
+        var home_team = match.teams[0],
+            away_team = match.teams[1];
+
         if (_(match.score).isEmpty()) {
+            stats[home_team].matches.notPlayed += 1;
+            stats[away_team].matches.notPlayed += 1;
             return;
         }
 
-        var home_team = match.teams[0], home_goals = match.score[0],
-            away_team = match.teams[1], away_goals = match.score[1];
+        var home_goals = match.score[0],
+            away_goals = match.score[1];
 
         stats[home_team].goals.for_    += home_goals;
         stats[home_team].goals.against += away_goals;
