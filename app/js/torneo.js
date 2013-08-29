@@ -90,9 +90,6 @@ var infoFor = function (team, match) {
         info.opponent = match.teams[1];
         info.where = 'home';
         if (match.score) {
-            if      (match.score[0]  >  match.score[1]) { info.pts = 3; }
-            else if (match.score[0] === match.score[1]) { info.pts = 1; }
-            else if (match.score[0]  <  match.score[1]) { info.pts = 0; }
             info.goalsFor     = match.score[0];
             info.goalsAgainst = match.score[1];
         }
@@ -100,12 +97,14 @@ var infoFor = function (team, match) {
         info.opponent = match.teams[0];
         info.where = 'away';
         if (match.score) {
-            if      (match.score[0]  >  match.score[1]) { info.pts = 0; }
-            else if (match.score[0] === match.score[1]) { info.pts = 1; }
-            else if (match.score[0]  <  match.score[1]) { info.pts = 3; }
             info.goalsFor     = match.score[1];
             info.goalsAgainst = match.score[0];
         }
+    }
+    if (match.score) {
+        if      (info.goalsFor  >  info.goalsAgainst) { info.pts = 3; }
+        else if (info.goalsFor === info.goalsAgainst) { info.pts = 1; }
+        else if (info.goalsFor  <  info.goalsAgainst) { info.pts = 0; }
     }
     return info;
 };
