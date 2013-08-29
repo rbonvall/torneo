@@ -1,10 +1,10 @@
 <table class="large-5 columns">
   <tbody>
-    <tr data-ng-repeat="match in tournament.matches">
-      <td data-ng-bind="match.kickoff | kickoff" class="kickoff-date"></td>
-      <td data-ng-bind="tournament.teams[match.teams[0]]"></td>
-      <td data-ng-bind="tournament.teams[match.teams[1]]"></td>
-      <td data-ng-bind="match | matchScore"></td>
+    <tr ng-repeat="match in tournament.matches">
+      <td ng-bind="match.kickoff | kickoff" class="kickoff-date"></td>
+      <td ng-bind="tournament.teams[match.teams[0]]"></td>
+      <td ng-bind="tournament.teams[match.teams[1]]"></td>
+      <td ng-bind="match | matchScore"></td>
     </tr>
   </tbody>
 </table>
