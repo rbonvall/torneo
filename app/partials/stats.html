@@ -21,8 +21,8 @@
       <td class="number-cell" ng-bind="$index + 1"></td>
       <td class="text-cell"   ng-bind="tournament.teams[team]"></td>
       <td class="number-cell" ng-bind="stats[team].matches.played()"></td>
-      <td class="number-cell" ng-bind="stats[team].matches.won * 3 + stats[team].matches.drawn"></td>
-      <td class="number-cell" ng-bind="stats[team].goals.for_ - stats[team].goals.against | signed"></td>
+      <td class="number-cell" ng-bind="stats[team].pts()"></td>
+      <td class="number-cell" ng-bind="stats[team].diff() | signed"></td>
 
       <td class="number-cell first-of-group" ng-bind="stats[team].matches.won"></td>
       <td class="number-cell"                ng-bind="stats[team].matches.drawn"></td>
