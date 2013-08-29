@@ -1,6 +1,11 @@
-<table class="large-5 columns">
+<table class="large-5 columns" ng-repeat="matchday in matchdays">
+  <thead>
+    <tr>
+      <th colspan="4" ng-bind-template="Fecha {{ matchday }}"></th>
+    </tr>
+  </thead>
   <tbody>
-    <tr ng-repeat="match in tournament.matches">
+    <tr ng-repeat="match in matchesByMatchday[matchday]">
       <td ng-bind="match.kickoff | kickoff" class="kickoff-date"></td>
       <td ng-bind="tournament.teams[match.teams[0]]"></td>
       <td ng-bind="tournament.teams[match.teams[1]]"></td>

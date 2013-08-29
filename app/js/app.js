@@ -15,7 +15,10 @@
     });
 
     app.controller('MatchesController', ['$scope', 'Tournament', function ($scope, Tournament) {
-        $scope.tournament = Tournament.query();
+        $scope.tournament = Tournament.query(function (response) {
+            $scope.matchesByMatchday = _(response.matches).groupBy('matchday');
+            $scope.matchdays = _($scope.matchesByMatchday).keys();
+        });
     }]);
 
     app.controller('StatsController', function ($scope, Tournament) {
