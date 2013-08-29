@@ -28,18 +28,18 @@
       <td class="number-cell"                ng-bind="stats[team].matches.drawn"></td>
       <td class="number-cell"                ng-bind="stats[team].matches.lost"></td>
       <td class="graph-cell">
-        <svg xmlns="http://www.w3.org/2000/svg" width="{{ 10 * nrMatchdays - 2 }}" height="16">
+        <svg xmlns="http://www.w3.org/2000/svg" ng-attr-width="{{ 10 * nrMatchdays - 2 }}" height="16">
           <g>
             <g ng-repeat="m in matchesByTeam[team]">
-              <rect x="{{ (m.matchday - 1) * 10 }}" y="0"
+              <rect ng-attr-x="{{ (m.matchday - 1) * 10 }}" y="0"
                     width="8" height="16"
-                    style="fill: hsl({{ boxColorHue[infoFor(team, m).where] }}, 30%, 85%);">
+                    ng-attr-style="fill: hsl({{ boxColorHue[infoFor(team, m).where] }}, 30%, 85%);">
               </rect>
-              <rect x="{{ (m.matchday - 1) * 10 }}"
-                    y="{{ 15 - infoFor(team, m).pts * 5 }}"
-                    width="8" height="{{ 1 + infoFor(team, m).pts * 5 }}"
+              <rect ng-attr-x="{{ (m.matchday - 1) * 10 }}"
+                    ng-attr-y="{{ 15 - infoFor(team, m).pts * 5 }}"
+                    width="8" ng-attr-height="{{ 1 + infoFor(team, m).pts * 5 }}"
                     ng-show="m.score"
-                    style="fill: hsl({{ boxColorHue[infoFor(team, m).where] }}, 90%, 25%);">
+                    ng-attr-style="fill: hsl({{ boxColorHue[infoFor(team, m).where] }}, 90%, 25%);">
               </rect>
             </g>
           </g>
