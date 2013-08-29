@@ -71,4 +71,4 @@
         };
     });
 
-})(angular.module('TorneoApp', ['ngResource']));
+})(angular.module('TorneoApp', ['ngResource', 'ngRoute']));
