@@ -93,6 +93,8 @@ var infoFor = function (team, match) {
             if      (match.score[0]  >  match.score[1]) { info.pts = 3; }
             else if (match.score[0] === match.score[1]) { info.pts = 1; }
             else if (match.score[0]  <  match.score[1]) { info.pts = 0; }
+            info.goalsFor     = match.score[0];
+            info.goalsAgainst = match.score[1];
         }
     } else if (team === match.teams[1]) {
         info.opponent = match.teams[0];
@@ -101,6 +103,8 @@ var infoFor = function (team, match) {
             if      (match.score[0]  >  match.score[1]) { info.pts = 0; }
             else if (match.score[0] === match.score[1]) { info.pts = 1; }
             else if (match.score[0]  <  match.score[1]) { info.pts = 3; }
+            info.goalsFor     = match.score[1];
+            info.goalsAgainst = match.score[0];
         }
     }
     return info;
