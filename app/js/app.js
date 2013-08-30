@@ -28,7 +28,6 @@
             $scope.matchesByTeam = matchesByTeam(response);
             $scope.infoFor = infoFor;
             $scope.nrMatchdays = numberOfMatchdays(response);
-            console.log($scope.nrMatchdays);
         });
         $scope.boxColorHue = {home: 210, away: 30};
     });

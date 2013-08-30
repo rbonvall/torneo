@@ -22,7 +22,6 @@ var initialStats = function () {
 var computeStats = function (tournament) {
     var stats = {};
 
-    console.log(tournament);
     _.chain(tournament.teams).keys().each(function (team) {
         stats[team] = initialStats();
     });
