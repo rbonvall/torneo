@@ -10,9 +10,9 @@
             ;
     }]);
 
-    app.factory('Tournament', function ($resource) {
+    app.factory('Tournament', ['$resource', function ($resource) {
         return $resource('data/2013a.json', {}, { query: { method: 'GET' } });
-    });
+    }]);
 
     app.controller('MatchesController', ['$scope', 'Tournament', function ($scope, Tournament) {
         $scope.tournament = Tournament.query(function (response) {
@@ -21,7 +21,7 @@
         });
     }]);
 
-    app.controller('StatsController', function ($scope, Tournament) {
+    app.controller('StatsController', ['$scope', 'Tournament', function ($scope, Tournament) {
         $scope.tournament = Tournament.query(function (response) {
             $scope.stats = computeStats(response);
             $scope.sortedTeams = sortedTeams($scope.stats);
@@ -30,7 +30,7 @@
             $scope.nrMatchdays = numberOfMatchdays(response);
         });
         $scope.boxColorHue = {home: 210, away: 30};
-    });
+    }]);
 
     app.filter('signed', function () {
         return function (input) {
