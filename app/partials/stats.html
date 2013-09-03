@@ -37,7 +37,7 @@
               </rect>
               <rect ng-attr-x="{{ (m.matchday - 1) * 10 }}"
                     ng-attr-y="{{ 15 - infoFor(team, m).pts * 5 }}"
-                    width="8" ng-attr-height="{{ 1 + infoFor(team, m).pts * 5 }}"
+                    width="8" ng-attr-height="{{ (m.score.length / 2) * (1 + infoFor(team, m).pts * 5) }}"
                     ng-show="m.score"
                     ng-attr-style="fill: hsl({{ boxColorHue[infoFor(team, m).where] }}, 90%, 25%);">
               </rect>
