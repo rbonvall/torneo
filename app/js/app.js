@@ -11,7 +11,7 @@
     }]);
 
     app.factory('Tournament', ['$resource', function ($resource) {
-        return $resource('data/:t.json', { t: '@t' }, { query: { method: 'GET' } });
+        return $resource('data/:t.json', { t: '@t' }, { query: { method: 'GET', cache: true } });
     }]);
 
     app.controller('MatchesController', ['$scope', 'Tournament', '$routeParams', function ($scope, Tournament, $routeParams) {
