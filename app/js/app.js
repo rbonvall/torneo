@@ -2,27 +2,27 @@
 
     app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
-            .when('/matches'     , { templateUrl: 'partials/matches.html'   , controller: 'MatchesController'   })
-            .when('/stats'       , { templateUrl: 'partials/stats.html'     , controller: 'StatsController'     })
+            .when('/:t/matches'     , { templateUrl: 'partials/matches.html'   , controller: 'MatchesController'   })
+            .when('/:t/stats'       , { templateUrl: 'partials/stats.html'     , controller: 'StatsController'     })
             // .when('/summary'  , { templateUrl: 'partials/summary.html'  , controller: 'SummaryController'   })
             // .when('/matrix'   , { templateUrl: 'partials/matrix.html'   , controller: 'MatrixController'    })
-            .otherwise({ redirectTo: '/stats' })
+            .otherwise({ redirectTo: '/2013a/stats' })
             ;
     }]);
 
     app.factory('Tournament', ['$resource', function ($resource) {
-        return $resource('data/2013a.json', {}, { query: { method: 'GET' } });
+        return $resource('data/:t.json', { t: '@t' }, { query: { method: 'GET' } });
     }]);
 
-    app.controller('MatchesController', ['$scope', 'Tournament', function ($scope, Tournament) {
-        $scope.tournament = Tournament.query(function (response) {
+    app.controller('MatchesController', ['$scope', 'Tournament', '$routeParams', function ($scope, Tournament, $routeParams) {
+        $scope.tournament = Tournament.query({ t: $routeParams.t }, function (response) {
             $scope.matchesByMatchday = _(response.matches).groupBy('matchday');
             $scope.matchdays = _($scope.matchesByMatchday).keys();
         });
     }]);
 
-    app.controller('StatsController', ['$scope', 'Tournament', function ($scope, Tournament) {
-        $scope.tournament = Tournament.query(function (response) {
+    app.controller('StatsController', ['$scope', 'Tournament', '$routeParams', function ($scope, Tournament, $routeParams) {
+        $scope.tournament = Tournament.query({ t: $routeParams.t }, function (response) {
             $scope.stats = computeStats(response);
             $scope.sortedTeams = sortedTeams($scope.stats);
             $scope.matchesByTeam = matchesByTeam(response);
