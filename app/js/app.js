@@ -6,7 +6,7 @@
             .when('/:t/stats'       , { templateUrl: 'partials/stats.html'     , controller: 'StatsController'     })
             // .when('/summary'  , { templateUrl: 'partials/summary.html'  , controller: 'SummaryController'   })
             // .when('/matrix'   , { templateUrl: 'partials/matrix.html'   , controller: 'MatrixController'    })
-            .otherwise({ redirectTo: '/2013a/stats' })
+            // .otherwise({ redirectTo: '/2013a/stats' })
             ;
     }]);
 
