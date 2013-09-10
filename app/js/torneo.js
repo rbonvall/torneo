@@ -1,4 +1,5 @@
-(function () {
+(function (_, console) {
+    "use strict";
 
     var T = {};
 
@@ -118,4 +119,4 @@
 
     this.Torneo = T;
 
-}).call(this);
+}).call(this, _, console);
