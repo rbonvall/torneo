@@ -82,10 +82,10 @@
   , {"matchday": 14, "teams": ["VEN", "URU"], "score": [0, 1]}
   , {"matchday": 14, "teams": ["CHI", "BOL"], "score": [3, 1]}
 
-  , {"matchday": 15, "teams": ["CHI", "VEN"], "score": []}
-  , {"matchday": 15, "teams": ["PER", "URU"], "score": []}
-  , {"matchday": 15, "teams": ["PAR", "BOL"], "score": []}
-  , {"matchday": 15, "teams": ["COL", "ECU"], "score": []}
+  , {"matchday": 15, "teams": ["CHI", "VEN"], "score": [3, 0]}
+  , {"matchday": 15, "teams": ["PER", "URU"], "score": [1, 2]}
+  , {"matchday": 15, "teams": ["PAR", "BOL"], "score": [4, 0]}
+  , {"matchday": 15, "teams": ["COL", "ECU"], "score": [1, 0]}
 
   , {"matchday": 16, "teams": ["PAR", "ARG"], "score": []}
   , {"matchday": 16, "teams": ["URU", "COL"], "score": []}
