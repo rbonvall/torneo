@@ -19,6 +19,7 @@
             $scope.matchesByMatchday = _(response.matches).groupBy('matchday');
             $scope.matchdays = _($scope.matchesByMatchday).keys();
         });
+        $scope.currentTournament.id = $routeParams.t;
     }]);
 
     app.controller('StatsController', ['$scope', 'Tournament', '$routeParams', function ($scope, Tournament, $routeParams) {
@@ -30,6 +31,11 @@
             $scope.nrMatchdays = numberOfMatchdays(response);
         });
         $scope.boxColorHue = {home: 210, away: 30};
+        $scope.currentTournament.id = $routeParams.t;
+    }]);
+
+    app.controller('NavController', ['$scope', function ($scope) {
+        $scope.currentTournament = {};
     }]);
 
     app.filter('signed', function () {
