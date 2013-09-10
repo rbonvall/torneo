@@ -7,10 +7,10 @@
       <th class="number-cell">PJ</th>
       <th class="number-cell">Pts</th>
       <th class="number-cell">Dif</th>
+      <th class=""></th>
       <th class="number-cell first-of-group">G</th>
       <th class="number-cell">E</th>
       <th class="number-cell">P</th>
-      <th class=""></th>
       <th class="number-cell first-of-group">F</th>
       <th class="number-cell">C</th>
       <th class="number-cell first-of-group">Rend</th>
@@ -23,10 +23,6 @@
       <td class="number-cell" ng-bind="stats[team].matches.played()"></td>
       <td class="number-cell" ng-bind="stats[team].pts()"></td>
       <td class="number-cell" ng-bind="stats[team].diff() | signed"></td>
-
-      <td class="number-cell first-of-group" ng-bind="stats[team].matches.won"></td>
-      <td class="number-cell"                ng-bind="stats[team].matches.drawn"></td>
-      <td class="number-cell"                ng-bind="stats[team].matches.lost"></td>
       <td class="graph-cell">
         <svg xmlns="http://www.w3.org/2000/svg" ng-attr-width="{{ 10 * nrMatchdays - 2 }}" height="16">
           <g>
@@ -45,6 +41,10 @@
           </g>
         </svg>
       </td>
+
+      <td class="number-cell first-of-group" ng-bind="stats[team].matches.won"></td>
+      <td class="number-cell"                ng-bind="stats[team].matches.drawn"></td>
+      <td class="number-cell"                ng-bind="stats[team].matches.lost"></td>
 
       <td class="number-cell first-of-group" ng-bind="stats[team].goals.for_"></td>
       <td class="number-cell"                ng-bind="stats[team].goals.against"></td>
