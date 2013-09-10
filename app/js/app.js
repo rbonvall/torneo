@@ -24,11 +24,11 @@
 
     app.controller('StatsController', ['$scope', 'Tournament', '$routeParams', function ($scope, Tournament, $routeParams) {
         $scope.tournament = Tournament.query({ t: $routeParams.t }, function (response) {
-            $scope.stats = computeStats(response);
-            $scope.sortedTeams = sortedTeams($scope.stats);
-            $scope.matchesByTeam = matchesByTeam(response);
-            $scope.infoFor = infoFor;
-            $scope.nrMatchdays = numberOfMatchdays(response);
+            $scope.stats = Torneo.computeStats(response);
+            $scope.sortedTeams = Torneo.sortedTeams($scope.stats);
+            $scope.matchesByTeam = Torneo.matchesByTeam(response);
+            $scope.infoFor = Torneo.infoFor;
+            $scope.nrMatchdays = Torneo.numberOfMatchdays(response);
         });
         $scope.boxColorHue = {home: 210, away: 30};
         $scope.currentTournament.id = $routeParams.t;
