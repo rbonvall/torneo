@@ -1,5 +1,5 @@
 body {
-    background-color: hsl(100, 30%, 85%);
+    background-color: hsl(100, 35%, 90%);
     font-family: sans-serif;
     font-size: 18px;
 }
@@ -28,4 +28,10 @@ table .first-of-group {
 .kickoff-date {
     color: hsl(0, 0%, 60%);
     font-size: smaller;
+}
+table {
+    border-collapse: collapse;
+}
+tr {
+    border-bottom: 1px solid hsl(0, 10%, 90%);
 }
