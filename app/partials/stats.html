@@ -18,11 +18,11 @@
   </thead>
   <tbody>
     <tr ng-repeat="team in sortedTeams">
-      <td class="number-cell" ng-bind="$index + 1"></td>
-      <td class="text-cell"   ng-bind="tournament.teams[team]"></td>
-      <td class="number-cell" ng-bind="stats[team].matches.played()"></td>
-      <td class="number-cell" ng-bind="stats[team].pts()"></td>
-      <td class="number-cell" ng-bind="stats[team].diff() | signed"></td>
+      <td class="number-cell unemphasize" ng-bind="$index + 1"></td>
+      <td class="text-cell"               ng-bind="tournament.teams[team]"></td>
+      <td class="number-cell unemphasize" ng-bind="stats[team].matches.played()"></td>
+      <td class="number-cell"             ng-bind="stats[team].pts()"></td>
+      <td class="number-cell"             ng-bind="stats[team].diff() | signed"></td>
       <td class="graph-cell">
         <svg xmlns="http://www.w3.org/2000/svg" ng-attr-width="{{ 10 * nrMatchdays - 2 }}" height="16">
           <g>

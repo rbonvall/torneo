@@ -35,3 +35,12 @@ table {
 tr {
     border-bottom: 1px solid hsl(0, 10%, 90%);
 }
+
+.emphasize {
+    font-weight: bold;
+    color: hsl(0, 0%, 20%);
+}
+.unemphasize {
+    font-size: smaller;
+    color: hsl(0, 0%, 60%);
+}
