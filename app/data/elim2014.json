@@ -87,10 +87,10 @@
   , {"matchday": 15, "teams": ["PAR", "BOL"], "score": [4, 0], "kickoff": "2013-09-06"}
   , {"matchday": 15, "teams": ["COL", "ECU"], "score": [1, 0], "kickoff": "2013-09-06"}
 
-  , {"matchday": 16, "teams": ["PAR", "ARG"], "score": [], "kickoff": "2013-09-10"}
-  , {"matchday": 16, "teams": ["URU", "COL"], "score": [], "kickoff": "2013-09-10"}
-  , {"matchday": 16, "teams": ["VEN", "PER"], "score": [], "kickoff": "2013-09-10"}
-  , {"matchday": 16, "teams": ["BOL", "ECU"], "score": [], "kickoff": "2013-09-10"}
+  , {"matchday": 16, "teams": ["PAR", "ARG"], "score": [2, 5], "kickoff": "2013-09-10"}
+  , {"matchday": 16, "teams": ["URU", "COL"], "score": [2, 0], "kickoff": "2013-09-10"}
+  , {"matchday": 16, "teams": ["VEN", "PER"], "score": [3, 2], "kickoff": "2013-09-10"}
+  , {"matchday": 16, "teams": ["BOL", "ECU"], "score": [1, 1], "kickoff": "2013-09-10"}
 
   , {"matchday": 17, "teams": ["ECU", "URU"], "score": [], "kickoff": "2013-10-10"}
   , {"matchday": 17, "teams": ["COL", "CHI"], "score": [], "kickoff": "2013-10-10"}
