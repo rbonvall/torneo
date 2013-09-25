@@ -42,7 +42,7 @@
   , {"matchday":  2, "teams": ["CBS", "IQQ"], "score": [0, 0], "kickoff": "2013-08-04T15:30-04:00"}
   , {"matchday":  2, "teams": ["ÑUB", "CBL"], "score": [1, 1], "kickoff": "2013-08-04T15:30-04:00"}
   , {"matchday":  2, "teams": ["CC" , "EVE"], "score": [0, 1], "kickoff": "2013-08-04"}
-  , {"matchday":  2, "teams": ["UDC", "ULC"], "score": [],     "kickoff": "2013-09-04"}
+  , {"matchday":  2, "teams": ["UDC", "ULC"], "score": [1, 1], "kickoff": "2013-09-04"}
 
   , {"matchday":  3, "teams": ["UCH", "CBS"], "score": [3, 0], "kickoff": "2013-08-09"}
   , {"matchday":  3, "teams": ["UC" , "UDC"], "score": [1, 1], "kickoff": "2013-08-10"}
