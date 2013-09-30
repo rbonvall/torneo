@@ -65,7 +65,7 @@
   , {"matchday":  4, "teams": ["CC" , "IQQ"], "score": [4, 1], "kickoff": "2013-08-18"}
 
   , {"matchday":  5, "teams": ["ÑUB", "UE" ], "score": [0, 2], "kickoff": "2013-08-23"}
-  , {"matchday":  5, "teams": ["SW",  "OHI"], "score": [2, 2], "kickoff": "2013-08-24"}
+  , {"matchday":  5, "teams": ["SW",  "OHI"], "score": [0, 3], "kickoff": "2013-08-24"}
   , {"matchday":  5, "teams": ["PAL", "UC" ], "score": [3, 6], "kickoff": "2013-08-24"}
   , {"matchday":  5, "teams": ["AI",  "CBL"], "score": [1, 1], "kickoff": "2013-08-24"}
   , {"matchday":  5, "teams": ["EVE", "UDC"], "score": [2, 3], "kickoff": "2013-08-25"}
