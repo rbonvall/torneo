@@ -72,7 +72,7 @@
 
     app.filter('percent', function () {
         return function (x) {
-            return (100 * x).toFixed(2).toString() + "%";
+            return (100 * x).toFixed(1).toString() + "%";
         };
     });
 
