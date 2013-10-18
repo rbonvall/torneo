@@ -65,8 +65,9 @@
                 return "";
             }
             var months = 'ene feb mar abr may jun jul ago sep oct nov dic'.split(/ /);
+            var weekdays = 'do lu ma mi ju vi sá'.split(/ /);
             var d = new Date(kickoff);
-            return d.getDate() + " " + months[d.getMonth()];
+            return weekdays[d.getDay()] + " " + d.getDate() + " " + months[d.getMonth()];
         };
     });
 
