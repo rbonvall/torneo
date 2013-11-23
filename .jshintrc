@@ -10,4 +10,6 @@
 , "strict": false
 , "trailing": true
 , "maxcomplexity": 10
+
+, "predef": ["angular", "_", "console", "Torneo"]
 }
