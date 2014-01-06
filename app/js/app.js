@@ -60,12 +60,12 @@
     });
 
     app.filter('kickoff', function () {
+        var months = 'ene feb mar abr may jun jul ago sep oct nov dic'.split(/ /);
+        var weekdays = 'do lu ma mi ju vi sá'.split(/ /);
         return function (kickoff) {
             if (!kickoff) {
                 return "";
             }
-            var months = 'ene feb mar abr may jun jul ago sep oct nov dic'.split(/ /);
-            var weekdays = 'do lu ma mi ju vi sá'.split(/ /);
             var d = new Date(kickoff);
             return weekdays[d.getDay()] + " " + d.getDate() + " " + months[d.getMonth()];
         };
