@@ -73,6 +73,9 @@
 
     app.filter('percent', function () {
         return function (x) {
+            if (isNaN(x)) {
+                return "";
+            }
             return (100 * x).toFixed(1).toString() + "%";
         };
     });
