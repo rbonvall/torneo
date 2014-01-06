@@ -74,7 +74,7 @@
             var teamStats = stats[team];
             var pts = 3 * teamStats.matches.won + teamStats.matches.drawn;
             var diff = teamStats.goals.for_ - teamStats.goals.against;
-            return -(1000 * pts + diff);
+            return -(1e6 * pts + 1e3 * diff + teamStats.goals.for_);
         });
     };
 
