@@ -17,6 +17,18 @@ module.exports = (grunt) ->
                     base: 'app'
                     keepalive: true
 
+        rsync:
+            options:
+                args: ['-a']
+            prod:
+                options:
+                    src: 'app/'
+                    dest: 'html/torneo'
+                    host: 'rb.8o.cl'
+
     grunt.loadNpmTasks 'grunt-contrib-jshint'
     grunt.loadNpmTasks 'grunt-contrib-connect'
+    grunt.loadNpmTasks 'grunt-rsync'
+
+    grunt.registerTask 'deploy', ['rsync:prod']
 
