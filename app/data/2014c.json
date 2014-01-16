@@ -34,25 +34,25 @@
   , {"matchday":  1, "teams": ["CBS", "ULC"], "score": [1, 5], "kickoff": "2014-01-05"}
   , {"matchday":  1, "teams": ["CC" , "AI" ], "score": [2, 1], "kickoff": "2014-01-05"}
 
-  , {"matchday":  2, "teams": ["AI" , "SW" ], "score": [], "kickoff": "2014-01-09"}
-  , {"matchday":  2, "teams": ["UCH", "PAL"], "score": [], "kickoff": "2014-01-10"}
-  , {"matchday":  2, "teams": ["HUA", "RAN"], "score": [], "kickoff": "2014-01-10"}
-  , {"matchday":  2, "teams": ["IQQ", "CBS"], "score": [], "kickoff": "2014-01-10"}
-  , {"matchday":  2, "teams": ["ULC", "UDC"], "score": [], "kickoff": "2014-01-11"}
-  , {"matchday":  2, "teams": ["UC" , "UE" ], "score": [], "kickoff": "2014-01-11"}
-  , {"matchday":  2, "teams": ["CDA", "OHI"], "score": [], "kickoff": "2014-01-11"}
-  , {"matchday":  2, "teams": ["CBL", "ÑUB"], "score": [], "kickoff": "2014-01-12"}
-  , {"matchday":  2, "teams": ["EVE", "CC" ], "score": [], "kickoff": "2014-01-12"}
+  , {"matchday":  2, "teams": ["AI" , "SW" ], "score": [2, 0], "kickoff": "2014-01-09"}
+  , {"matchday":  2, "teams": ["UCH", "PAL"], "score": [0, 1], "kickoff": "2014-01-10"}
+  , {"matchday":  2, "teams": ["HUA", "RAN"], "score": [3, 2], "kickoff": "2014-01-10"}
+  , {"matchday":  2, "teams": ["IQQ", "CBS"], "score": [2, 0], "kickoff": "2014-01-10"}
+  , {"matchday":  2, "teams": ["ULC", "UDC"], "score": [0, 2], "kickoff": "2014-01-11"}
+  , {"matchday":  2, "teams": ["UC" , "UE" ], "score": [1, 0], "kickoff": "2014-01-11"}
+  , {"matchday":  2, "teams": ["CDA", "OHI"], "score": [0, 0], "kickoff": "2014-01-11"}
+  , {"matchday":  2, "teams": ["CBL", "ÑUB"], "score": [3, 1], "kickoff": "2014-01-12"}
+  , {"matchday":  2, "teams": ["EVE", "CC" ], "score": [0, 2], "kickoff": "2014-01-12"}
 
-  , {"matchday":  3, "teams": ["SW" , "PAL"], "score": [], "kickoff": "2014-01-13"}
-  , {"matchday":  3, "teams": ["CBS", "UCH"], "score": [], "kickoff": "2014-01-14"}
-  , {"matchday":  3, "teams": ["UDC", "UC" ], "score": [], "kickoff": "2014-01-14"}
-  , {"matchday":  3, "teams": ["OHI", "AI" ], "score": [], "kickoff": "2014-01-14"}
-  , {"matchday":  3, "teams": ["CBL", "HUA"], "score": [], "kickoff": "2014-01-15"}
-  , {"matchday":  3, "teams": ["RAN", "EVE"], "score": [], "kickoff": "2014-01-15"}
-  , {"matchday":  3, "teams": ["UE" , "IQQ"], "score": [], "kickoff": "2014-01-15"}
-  , {"matchday":  3, "teams": ["ÑUB", "ULC"], "score": [], "kickoff": "2014-01-15"}
-  , {"matchday":  3, "teams": ["CC" , "CDA"], "score": [], "kickoff": "2014-01-15"}
+  , {"matchday":  3, "teams": ["SW" , "PAL"], "score": [2, 2], "kickoff": "2014-01-13"}
+  , {"matchday":  3, "teams": ["CBS", "UCH"], "score": [2, 1], "kickoff": "2014-01-14"}
+  , {"matchday":  3, "teams": ["UDC", "UC" ], "score": [2, 1], "kickoff": "2014-01-14"}
+  , {"matchday":  3, "teams": ["OHI", "AI" ], "score": [1, 1], "kickoff": "2014-01-14"}
+  , {"matchday":  3, "teams": ["RAN", "EVE"], "score": [3, 0], "kickoff": "2014-01-15"}
+  , {"matchday":  3, "teams": ["CBL", "HUA"], "score": [1, 1], "kickoff": "2014-01-15"}
+  , {"matchday":  3, "teams": ["UE" , "IQQ"], "score": [1, 1], "kickoff": "2014-01-15"}
+  , {"matchday":  3, "teams": ["ÑUB", "ULC"], "score": [2, 0], "kickoff": "2014-01-15"}
+  , {"matchday":  3, "teams": ["CC" , "CDA"], "score": [1, 1], "kickoff": "2014-01-15"}
 
   , {"matchday":  4, "teams": ["PAL", "UDC"], "score": [], "kickoff": "2014-01-24"}
   , {"matchday":  4, "teams": ["HUA", "UE" ], "score": [], "kickoff": "2014-01-25"}
