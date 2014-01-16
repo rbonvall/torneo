@@ -15,7 +15,8 @@ define([
             .when('/:t/stats'       , { templateUrl: 'partials/stats.html'     , controller: 'StatsController'     })
             // .when('/summary'  , { templateUrl: 'partials/summary.html'  , controller: 'SummaryController'   })
             // .when('/matrix'   , { templateUrl: 'partials/matrix.html'   , controller: 'MatrixController'    })
-            // .otherwise({ redirectTo: '/2013a/stats' })
+            .when('/'               , { templateUrl: 'partials/front.html'     , controller: 'FrontPageController' })
+             .otherwise({ redirectTo: '/2013a/stats' })
             ;
     }]);
 
@@ -41,6 +42,15 @@ define([
         });
         $scope.boxColorHue = {home: 210, away: 30};
         $scope.currentTournament.id = $routeParams.t;
+    }]);
+
+    app.controller('FrontPageController', ['$scope', function ($scope) {
+        $scope.tournaments = [
+            { code: 'elim2014', name: '2014 Eliminatorias Conmebol' },
+            { code: '2013t',    name: '2013 Transición' },
+            { code: '2013a',    name: '2013–14 Apertura' },
+            { code: '2014c',    name: '2013–14 Clausura' }
+        ];
     }]);
 
     app.controller('NavController', ['$scope', function ($scope) {
