@@ -1,11 +1,11 @@
 define([
+    'domReady!',
     'underscore',
     'torneo',
     'angular',
     'ngResource',
-    'ngRoute',
-    'domReady!'
-], function (_, Torneo, angular) {
+    'ngRoute'
+], function (dom, _, Torneo, angular) {
 
     var app = angular.module('TorneoApp', ['ngResource', 'ngRoute']);
 
@@ -89,6 +89,6 @@ define([
         };
     });
 
-    angular.bootstrap(document, ['TorneoApp']);
+    angular.bootstrap(dom, ['TorneoApp']);
 
 });
