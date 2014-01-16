@@ -1,4 +1,13 @@
-(function (app) {
+define([
+    'underscore',
+    'torneo',
+    'angular',
+    'ngResource',
+    'ngRoute',
+    'domReady!'
+], function (_, Torneo, angular) {
+
+    var app = angular.module('TorneoApp', ['ngResource', 'ngRoute']);
 
     app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
@@ -80,4 +89,6 @@
         };
     });
 
-})(angular.module('TorneoApp', ['ngResource', 'ngRoute']));
+    angular.bootstrap(document, ['TorneoApp']);
+
+});

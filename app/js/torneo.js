@@ -1,4 +1,4 @@
-(function (_, console) {
+define(['underscore'], function (_) {
     "use strict";
 
     var T = {};
@@ -117,6 +117,5 @@
         return _.chain(tournament.matches).pluck('matchday').max().value();
     };
 
-    this.Torneo = T;
-
-}).call(this, _, console);
+    return T;
+});
