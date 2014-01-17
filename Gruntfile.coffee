@@ -26,9 +26,13 @@ module.exports = (grunt) ->
                     dest: 'html/torneo'
                     host: 'rb.8o.cl'
 
+        jscs:
+            src: 'app/js/**/*.js'
+
     grunt.loadNpmTasks 'grunt-contrib-jshint'
     grunt.loadNpmTasks 'grunt-contrib-connect'
     grunt.loadNpmTasks 'grunt-rsync'
+    grunt.loadNpmTasks 'grunt-jscs-checker'
 
     grunt.registerTask 'deploy', ['rsync:prod']
 
