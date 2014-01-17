@@ -35,4 +35,5 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-jscs-checker'
 
     grunt.registerTask 'deploy', ['rsync:prod']
+    grunt.registerTask 'style', ['jshint', 'jscs']
 
