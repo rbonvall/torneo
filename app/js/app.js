@@ -11,12 +11,12 @@ define([
 
     app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
-            .when('/:t/matches'     , { templateUrl: 'partials/matches.html'   , controller: 'MatchesController'   })
-            .when('/:t/stats'       , { templateUrl: 'partials/stats.html'     , controller: 'StatsController'     })
-            // .when('/summary'  , { templateUrl: 'partials/summary.html'  , controller: 'SummaryController'   })
-            // .when('/matrix'   , { templateUrl: 'partials/matrix.html'   , controller: 'MatrixController'    })
-            .when('/'               , { templateUrl: 'partials/front.html'     , controller: 'FrontPageController' })
-             .otherwise({ redirectTo: '/2013a/stats' })
+            .when('/:t/matches', { templateUrl: 'partials/matches.html',  controller: 'MatchesController'   })
+            .when('/:t/stats',   { templateUrl: 'partials/stats.html',    controller: 'StatsController'     })
+            // .when('/summary',    { templateUrl: 'partials/summary.html',  controller: 'SummaryController'   })
+            // .when('/matrix',     { templateUrl: 'partials/matrix.html',   controller: 'MatrixController'    })
+            .when('/',           { templateUrl: 'partials/front.html',    controller: 'FrontPageController' })
+            .otherwise({ redirectTo: '/2013a/stats' })
             ;
     }]);
 
