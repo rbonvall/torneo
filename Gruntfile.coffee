@@ -5,10 +5,7 @@ module.exports = (grunt) ->
         jshint:
             options:
                 jshintrc: '.jshintrc'
-            all: [
-                'Gruntfile.js'
-                'app/js/**/*.js'
-            ]
+            all: ['app/js/**/*.js']
 
         connect:
             server:
