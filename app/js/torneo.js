@@ -32,34 +32,34 @@ define(['underscore'], function (_) {
         });
 
         _(tournament.matches).each(function (match) {
-            var home_team = match.teams[0],
-                away_team = match.teams[1];
+            var homeTeam = match.teams[0],
+                awayTeam = match.teams[1];
 
             if (_(match.score).isEmpty()) {
-                stats[home_team].matches.notPlayed += 1;
-                stats[away_team].matches.notPlayed += 1;
+                stats[homeTeam].matches.notPlayed += 1;
+                stats[awayTeam].matches.notPlayed += 1;
                 return;
             }
 
-            var home_goals = match.score[0],
-                away_goals = match.score[1];
+            var homeGoals = match.score[0],
+                awayGoals = match.score[1];
 
-            stats[home_team].goals.for_    += home_goals;
-            stats[home_team].goals.against += away_goals;
-            stats[away_team].goals.for_    += away_goals;
-            stats[away_team].goals.against += home_goals;
+            stats[homeTeam].goals.for_    += homeGoals;
+            stats[homeTeam].goals.against += awayGoals;
+            stats[awayTeam].goals.for_    += awayGoals;
+            stats[awayTeam].goals.against += homeGoals;
 
-            if (home_goals === away_goals) {
-                stats[home_team].matches.drawn += 1;
-                stats[away_team].matches.drawn += 1;
+            if (homeGoals === awayGoals) {
+                stats[homeTeam].matches.drawn += 1;
+                stats[awayTeam].matches.drawn += 1;
             }
-            else if (home_goals > away_goals) {
-                stats[home_team].matches.won  += 1;
-                stats[away_team].matches.lost += 1;
+            else if (homeGoals > awayGoals) {
+                stats[homeTeam].matches.won  += 1;
+                stats[awayTeam].matches.lost += 1;
             }
-            else if (home_goals < away_goals) {
-                stats[home_team].matches.lost += 1;
-                stats[away_team].matches.won  += 1;
+            else if (homeGoals < awayGoals) {
+                stats[homeTeam].matches.lost += 1;
+                stats[awayTeam].matches.won  += 1;
             }
             else { console.error('Unreachable.'); }
         });
