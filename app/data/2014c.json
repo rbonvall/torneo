@@ -132,7 +132,7 @@
   , {"matchday": 11, "teams": ["OHI", "UDC"], "score": [0, 0], "kickoff": "2014-03-16"}
   , {"matchday": 11, "teams": ["SW" , "UC" ], "score": [0, 2], "kickoff": "2014-03-17"}
   , {"matchday": 11, "teams": ["EVE", "ULC"], "score": [1, 0], "kickoff": "2014-03-18"}
-  , {"matchday": 11, "teams": ["PAL", "UE" ], "score": [], "kickoff": "2014-03-26"}
+  , {"matchday": 11, "teams": ["PAL", "UE" ], "score": [1, 2], "kickoff": "2014-03-26"}
 
   , {"matchday": 12, "teams": ["AI" , "HUA"], "score": [0, 0], "kickoff": "2014-03-21"}
   , {"matchday": 12, "teams": ["UDC", "SW" ], "score": [2, 1], "kickoff": "2014-03-22"}
