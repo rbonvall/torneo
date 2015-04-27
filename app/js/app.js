@@ -49,7 +49,8 @@ define([
             { code: 'elim2014', name: '2014 Eliminatorias Conmebol' },
             { code: '2013t',    name: '2013 Transición' },
             { code: '2013a',    name: '2013–14 Apertura' },
-            { code: '2014c',    name: '2013–14 Clausura' }
+            { code: '2014c',    name: '2013–14 Clausura' },
+            { code: '2015c',    name: '2014–15 Clausura' }
         ];
     }]);
 
