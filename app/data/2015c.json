@@ -1,0 +1,198 @@
+{ "name": "Campeonato Scotiabank"
+, "season": "Torneo de Clausura 2014-2015"
+, "teams":
+  { "CDA": "Antofagasta"
+  , "AI" : "Audax Italiano"
+  , "BAR": "Barnechea"
+  , "CBL": "Cobreloa"
+  , "CBS": "Cobresal"
+  , "CC" : "Colo Colo"
+  , "IQQ": "Dep. Iquique"
+  , "HUA": "Huachipato"
+  , "ÑUB": "Ñublense"
+  , "OHI": "O'Higgins"
+  , "PAL": "Palestino"
+  , "SMA": "San Marcos"
+  , "SW" : "S. Wanderers"
+  , "UE" : "Unión Española"
+  , "ULC": "U. La Calera"
+  , "UC" : "U. Católica"
+  , "UCH": "U. de Chile"
+  , "UDC": "U. de Concepción"
+  }
+, "stadiums":
+  {
+  }
+, "matches":
+  [ {"matchday":  1, "teams": ["OHI", "ULC"], "score": [2, 1], "kickoff": "2015-01-02"}
+  , {"matchday":  1, "teams": ["CBS", "UCH"], "score": [1, 1], "kickoff": "2015-01-03"}
+  , {"matchday":  1, "teams": ["ÑUB", "HUA"], "score": [3, 1], "kickoff": "2015-01-03"}
+  , {"matchday":  1, "teams": ["CDA", "UC" ], "score": [2, 3], "kickoff": "2015-01-04"}
+  , {"matchday":  1, "teams": ["UDC", "IQQ"], "score": [3, 1], "kickoff": "2015-01-04"}
+  , {"matchday":  1, "teams": ["CC" , "SMA"], "score": [0, 1], "kickoff": "2015-01-04"}
+  , {"matchday":  1, "teams": ["UE" , "AI" ], "score": [0, 2], "kickoff": "2015-01-05"}
+  , {"matchday":  1, "teams": ["CBL", "PAL"], "score": [3, 0], "kickoff": "2015-01-07"}
+  , {"matchday":  1, "teams": ["BAR", "SW" ], "score": [0, 2], "kickoff": "2015-01-07"}
+
+  , {"matchday":  2, "teams": ["HUA", "UDC"], "score": [1, 2], "kickoff": "2015-01-09"}
+  , {"matchday":  2, "teams": ["AI" , "CDA"], "score": [1, 1], "kickoff": "2015-01-09"}
+  , {"matchday":  2, "teams": ["UCH", "OHI"], "score": [3, 0], "kickoff": "2015-01-10"}
+  , {"matchday":  2, "teams": ["ULC", "BAR"], "score": [3, 0], "kickoff": "2015-01-10"}
+  , {"matchday":  2, "teams": ["SMA", "ÑUB"], "score": [0, 0], "kickoff": "2015-01-10"}
+  , {"matchday":  2, "teams": ["IQQ", "CC" ], "score": [3, 2], "kickoff": "2015-01-11"}
+  , {"matchday":  2, "teams": ["PAL", "CBS"], "score": [0, 1], "kickoff": "2015-01-11"}
+  , {"matchday":  2, "teams": ["UC" , "UE" ], "score": [0, 0], "kickoff": "2015-01-11"}
+  , {"matchday":  2, "teams": ["SW" , "CBL"], "score": [0, 1], "kickoff": "2015-01-11"}
+
+  , {"matchday":  3, "teams": ["CBL", "UC" ], "score": [1, 3], "kickoff": "2015-01-16"}
+  , {"matchday":  3, "teams": ["UDC", "OHI"], "score": [2, 1], "kickoff": "2015-01-17"}
+  , {"matchday":  3, "teams": ["SW" , "UCH"], "score": [3, 2], "kickoff": "2015-01-17"}
+  , {"matchday":  3, "teams": ["UE" , "SMA"], "score": [1, 2], "kickoff": "2015-01-17"}
+  , {"matchday":  3, "teams": ["ÑUB", "PAL"], "score": [0, 3], "kickoff": "2015-01-18"}
+  , {"matchday":  3, "teams": ["CBS", "IQQ"], "score": [4, 2], "kickoff": "2015-01-18"}
+  , {"matchday":  3, "teams": ["CDA", "ULC"], "score": [3, 4], "kickoff": "2015-01-18"}
+  , {"matchday":  3, "teams": ["CC" , "HUA"], "score": [2, 2], "kickoff": "2015-01-18"}
+  , {"matchday":  3, "teams": ["BAR", "AI" ], "score": [0, 0], "kickoff": "2015-01-19"}
+
+  , {"matchday":  4, "teams": ["HUA", "CBS"], "score": [2, 1], "kickoff": "2015-01-30"}
+  , {"matchday":  4, "teams": ["IQQ", "SW" ], "score": [2, 1], "kickoff": "2015-01-30"}
+  , {"matchday":  4, "teams": ["ULC", "UE" ], "score": [2, 0], "kickoff": "2015-01-31"}
+  , {"matchday":  4, "teams": ["UDC", "CBL"], "score": [3, 2], "kickoff": "2015-01-31"}
+  , {"matchday":  4, "teams": ["UCH", "CDA"], "score": [1, 3], "kickoff": "2015-01-31"}
+  , {"matchday":  4, "teams": ["AI" , "PAL"], "score": [1, 2], "kickoff": "2015-01-31"}
+  , {"matchday":  4, "teams": ["SMA", "BAR"], "score": [0, 0], "kickoff": "2015-01-31"}
+  , {"matchday":  4, "teams": ["OHI", "CC" ], "score": [0, 2], "kickoff": "2015-02-01"}
+  , {"matchday":  4, "teams": ["UC" , "ÑUB"], "score": [2, 1], "kickoff": "2015-02-01"}
+
+  , {"matchday":  5, "teams": ["UCH", "IQQ"], "score": [2, 3], "kickoff": "2015-02-03"}
+  , {"matchday":  5, "teams": ["BAR", "UDC"], "score": [1, 2], "kickoff": "2015-02-03"}
+  , {"matchday":  5, "teams": ["CBS", "AI" ], "score": [3, 1], "kickoff": "2015-02-04"}
+  , {"matchday":  5, "teams": ["CDA", "SMA"], "score": [0, 2], "kickoff": "2015-02-04"}
+  , {"matchday":  5, "teams": ["UE" , "CC" ], "score": [1, 3], "kickoff": "2015-02-04"}
+  , {"matchday":  5, "teams": ["SW" , "UC" ], "score": [2, 0], "kickoff": "2015-02-04"}
+  , {"matchday":  5, "teams": ["CBL", "OHI"], "score": [0, 0], "kickoff": "2015-02-05"}
+  , {"matchday":  5, "teams": ["ÑUB", "ULC"], "score": [1, 2], "kickoff": "2015-02-05"}
+  , {"matchday":  5, "teams": ["PAL", "HUA"], "score": [1, 1], "kickoff": "2015-03-25"}
+
+  , {"matchday":  6, "teams": ["HUA", "UCH"], "score": [2, 2], "kickoff": "2015-02-07"}
+  , {"matchday":  6, "teams": ["CC" , "BAR"], "score": [4, 1], "kickoff": "2015-02-07"}
+  , {"matchday":  6, "teams": ["AI" , "SW" ], "score": [2, 1], "kickoff": "2015-02-07"}
+  , {"matchday":  6, "teams": ["SMA", "CBS"], "score": [1, 1], "kickoff": "2015-02-07"}
+  , {"matchday":  6, "teams": ["UDC", "UE" ], "score": [1, 2], "kickoff": "2015-02-08"}
+  , {"matchday":  6, "teams": ["IQQ", "CDA"], "score": [1, 2], "kickoff": "2015-02-08"}
+  , {"matchday":  6, "teams": ["ULC", "CBL"], "score": [0, 0], "kickoff": "2015-02-08"}
+  , {"matchday":  6, "teams": ["UC" , "PAL"], "score": [3, 2], "kickoff": "2015-02-08"}
+  , {"matchday":  6, "teams": ["OHI", "ÑUB"], "score": [1, 0], "kickoff": "2015-02-09"}
+
+  , {"matchday":  7, "teams": ["BAR", "IQQ"], "score": [1, 0], "kickoff": "2015-02-13"}
+  , {"matchday":  7, "teams": ["UCH", "UE" ], "score": [1, 2], "kickoff": "2015-02-13"}
+  , {"matchday":  7, "teams": ["CDA", "CC" ], "score": [1, 2], "kickoff": "2015-02-14"}
+  , {"matchday":  7, "teams": ["ULC", "UDC"], "score": [2, 0], "kickoff": "2015-02-14"}
+  , {"matchday":  7, "teams": ["CBL", "CBS"], "score": [1, 3], "kickoff": "2015-02-15"}
+  , {"matchday":  7, "teams": ["ÑUB", "AI" ], "score": [1, 0], "kickoff": "2015-02-15"}
+  , {"matchday":  7, "teams": ["PAL", "SMA"], "score": [0, 4], "kickoff": "2015-02-15"}
+  , {"matchday":  7, "teams": ["OHI", "UC" ], "score": [1, 1], "kickoff": "2015-02-15"}
+  , {"matchday":  7, "teams": ["SW" , "HUA"], "score": [0, 1], "kickoff": "2015-02-15"}
+
+  , {"matchday":  8, "teams": ["BAR", "ÑUB"], "score": [1, 3], "kickoff": "2015-02-20"}
+  , {"matchday":  8, "teams": ["SMA", "UC" ], "score": [3, 3], "kickoff": "2015-02-21"}
+  , {"matchday":  8, "teams": ["HUA", "CDA"], "score": [2, 0], "kickoff": "2015-02-21"}
+  , {"matchday":  8, "teams": ["UE" , "OHI"], "score": [1, 2], "kickoff": "2015-02-21"}
+  , {"matchday":  8, "teams": ["UDC", "UCH"], "score": [1, 2], "kickoff": "2015-02-22"}
+  , {"matchday":  8, "teams": ["CBS", "SW" ], "score": [1, 0], "kickoff": "2015-02-22"}
+  , {"matchday":  8, "teams": ["CC" , "PAL"], "score": [1, 1], "kickoff": "2015-02-22"}
+  , {"matchday":  8, "teams": ["IQQ", "ULC"], "score": [2, 1], "kickoff": "2015-02-22"}
+  , {"matchday":  8, "teams": ["AI" , "CBL"], "score": [1, 0], "kickoff": "2015-02-22"}
+
+  , {"matchday":  9, "teams": ["SW" , "UDC"], "score": [0, 0], "kickoff": "2015-02-27"}
+  , {"matchday":  9, "teams": ["OHI", "BAR"], "score": [3, 1], "kickoff": "2015-02-27"}
+  , {"matchday":  9, "teams": ["UC" , "CBS"], "score": [2, 4], "kickoff": "2015-02-28"}
+  , {"matchday":  9, "teams": ["PAL", "IQQ"], "score": [2, 2], "kickoff": "2015-03-01"}
+  , {"matchday":  9, "teams": ["CBL", "SMA"], "score": [1, 0], "kickoff": "2015-03-01"}
+  , {"matchday":  9, "teams": ["ÑUB", "CC" ], "score": [0, 1], "kickoff": "2015-03-01"}
+  , {"matchday":  9, "teams": ["CDA", "UE" ], "score": [1, 2], "kickoff": "2015-03-01"}
+  , {"matchday":  9, "teams": ["ULC", "HUA"], "score": [0, 1], "kickoff": "2015-03-01"}
+  , {"matchday":  9, "teams": ["UCH", "AI" ], "score": [2, 3], "kickoff": "2015-03-02"}
+
+  , {"matchday": 10, "teams": ["UE" , "SW" ], "score": [2, 2], "kickoff": "2015-03-06"}
+  , {"matchday": 10, "teams": ["BAR", "CBL"], "score": [0, 1], "kickoff": "2015-03-06"}
+  , {"matchday": 10, "teams": ["PAL", "OHI"], "score": [3, 3], "kickoff": "2015-03-07"}
+  , {"matchday": 10, "teams": ["HUA", "UC" ], "score": [3, 5], "kickoff": "2015-03-07"}
+  , {"matchday": 10, "teams": ["IQQ", "AI" ], "score": [3, 2], "kickoff": "2015-03-07"}
+  , {"matchday": 10, "teams": ["SMA", "UCH"], "score": [0, 1], "kickoff": "2015-03-08"}
+  , {"matchday": 10, "teams": ["CBS", "ULC"], "score": [1, 1], "kickoff": "2015-03-08"}
+  , {"matchday": 10, "teams": ["ÑUB", "CDA"], "score": [0, 1], "kickoff": "2015-03-08"}
+  , {"matchday": 10, "teams": ["CC" , "UDC"], "score": [3, 0], "kickoff": "2015-03-08"}
+
+  , {"matchday": 11, "teams": ["UDC", "ÑUB"], "score": [2, 2], "kickoff": "2015-03-13"}
+  , {"matchday": 11, "teams": ["OHI", "IQQ"], "score": [1, 0], "kickoff": "2015-03-13"}
+  , {"matchday": 11, "teams": ["UCH", "CC" ], "score": [1, 2], "kickoff": "2015-03-14"}
+  , {"matchday": 11, "teams": ["CBL", "UE" ], "score": [1, 1], "kickoff": "2015-03-15"}
+  , {"matchday": 11, "teams": ["CDA", "CBS"], "score": [2, 0], "kickoff": "2015-03-15"}
+  , {"matchday": 11, "teams": ["UC" , "BAR"], "score": [5, 0], "kickoff": "2015-03-15"}
+  , {"matchday": 11, "teams": ["AI" , "HUA"], "score": [2, 2], "kickoff": "2015-03-15"}
+  , {"matchday": 11, "teams": ["ULC", "SMA"], "score": [1, 4], "kickoff": "2015-03-28"}
+  , {"matchday": 11, "teams": ["SW" , "PAL"], "score": [0, 3], "kickoff": "2015-04-01"}
+
+  , {"matchday": 12, "teams": ["AI" , "UC" ], "score": [1, 1], "kickoff": "2015-03-20"}
+  , {"matchday": 12, "teams": ["BAR", "CDA"], "score": [1, 3], "kickoff": "2015-03-21"}
+  , {"matchday": 12, "teams": ["UE" , "ÑUB"], "score": [1, 1], "kickoff": "2015-03-21"}
+  , {"matchday": 12, "teams": ["HUA", "OHI"], "score": [3, 2], "kickoff": "2015-03-21"}
+  , {"matchday": 12, "teams": ["CC" , "ULC"], "score": [1, 4], "kickoff": "2015-03-21"}
+  , {"matchday": 12, "teams": ["SMA", "SW" ], "score": [3, 3], "kickoff": "2015-03-21"}
+  , {"matchday": 12, "teams": ["IQQ", "CBL"], "score": [0, 0], "kickoff": "2015-03-21"}
+  , {"matchday": 12, "teams": ["PAL", "UCH"], "score": [1, 3], "kickoff": "2015-03-22"}
+  , {"matchday": 12, "teams": ["CBS", "UDC"], "score": [2, 1], "kickoff": "2015-03-22"}
+
+  , {"matchday": 13, "teams": ["CC" , "CBS"], "score": [1, 2], "kickoff": "2015-04-03"}
+  , {"matchday": 13, "teams": ["ÑUB", "IQQ"], "score": [2, 0], "kickoff": "2015-04-03"}
+  , {"matchday": 13, "teams": ["OHI", "SW" ], "score": [1, 1], "kickoff": "2015-04-04"}
+  , {"matchday": 13, "teams": ["CDA", "PAL"], "score": [1, 2], "kickoff": "2015-04-04"}
+  , {"matchday": 13, "teams": ["ULC", "AI" ], "score": [2, 2], "kickoff": "2015-04-04"}
+  , {"matchday": 13, "teams": ["UE" , "BAR"], "score": [2, 1], "kickoff": "2015-04-04"}
+  , {"matchday": 13, "teams": ["UC" , "UCH"], "score": [2, 4], "kickoff": "2015-04-05"}
+  , {"matchday": 13, "teams": ["UDC", "SMA"], "score": [3, 2], "kickoff": "2015-04-05"}
+  , {"matchday": 13, "teams": ["CBL", "HUA"], "score": [6, 0], "kickoff": "2015-04-05"}
+
+  , {"matchday": 14, "teams": ["UC" , "ULC"], "score": [4, 2], "kickoff": "2015-04-10"}
+  , {"matchday": 14, "teams": ["PAL", "UDC"], "score": [3, 2], "kickoff": "2015-04-11"}
+  , {"matchday": 14, "teams": ["SW" , "CDA"], "score": [0, 2], "kickoff": "2015-04-11"}
+  , {"matchday": 14, "teams": ["UCH", "CBL"], "score": [4, 0], "kickoff": "2015-04-11"}
+  , {"matchday": 14, "teams": ["CBS", "ÑUB"], "score": [1, 0], "kickoff": "2015-04-11"}
+  , {"matchday": 14, "teams": ["SMA", "OHI"], "score": [0, 0], "kickoff": "2015-04-11"}
+  , {"matchday": 14, "teams": ["AI" , "CC" ], "score": [0, 1], "kickoff": "2015-04-12"}
+  , {"matchday": 14, "teams": ["IQQ", "UE" ], "score": [0, 1], "kickoff": "2015-04-12"}
+  , {"matchday": 14, "teams": ["HUA", "BAR"], "score": [4, 1], "kickoff": "2015-04-12"}
+
+  , {"matchday": 15, "teams": ["OHI", "CBS"], "score": [2, 0], "kickoff": "2015-04-17"}
+  , {"matchday": 15, "teams": ["CC" , "UC" ], "score": [0, 3], "kickoff": "2015-04-18"}
+  , {"matchday": 15, "teams": ["CBL", "CDA"], "score": [3, 1], "kickoff": "2015-04-18"}
+  , {"matchday": 15, "teams": ["UE" , "HUA"], "score": [0, 1], "kickoff": "2015-04-18"}
+  , {"matchday": 15, "teams": ["ÑUB", "SW" ], "score": [1, 1], "kickoff": "2015-04-18"}
+  , {"matchday": 15, "teams": ["UDC", "AI" ], "score": [2, 2], "kickoff": "2015-04-19"}
+  , {"matchday": 15, "teams": ["IQQ", "SMA"], "score": [4, 1], "kickoff": "2015-04-19"}
+  , {"matchday": 15, "teams": ["BAR", "UCH"], "score": [1, 4], "kickoff": "2015-04-19"}
+  , {"matchday": 15, "teams": ["ULC", "PAL"], "score": [4, 0], "kickoff": "2015-04-19"}
+
+  , {"matchday": 16, "teams": ["PAL", "UE" ], "score": [2, 3], "kickoff": "2015-04-25"}
+  , {"matchday": 16, "teams": ["SW" , "ULC"], "score": [4, 2], "kickoff": "2015-04-25"}
+  , {"matchday": 16, "teams": ["CDA", "UDC"], "score": [0, 1], "kickoff": "2015-04-25"}
+  , {"matchday": 16, "teams": ["HUA", "SMA"], "score": [1, 0], "kickoff": "2015-04-25"}
+  , {"matchday": 16, "teams": ["AI" , "OHI"], "score": [3, 0], "kickoff": "2015-04-26"}
+  , {"matchday": 16, "teams": ["CBL", "CC" ], "score": [0, 4], "kickoff": "2015-04-26"}
+  , {"matchday": 16, "teams": ["UCH", "ÑUB"], "score": [2, 1], "kickoff": "2015-04-26"}
+  , {"matchday": 16, "teams": ["UC" , "IQQ"], "score": [3, 3], "kickoff": "2015-04-26"}
+  , {"matchday": 16, "teams": ["CBS", "BAR"], "score": [3, 2], "kickoff": "2015-04-26"}
+
+  , {"matchday": 17, "teams": ["UE" , "CBS"], "score": [], "kickoff": "2015-05-01"}
+  , {"matchday": 17, "teams": ["ULC", "UCH"], "score": [], "kickoff": "2015-05-01"}
+  , {"matchday": 17, "teams": ["CC" , "SW" ], "score": [], "kickoff": "2015-05-01"}
+  , {"matchday": 17, "teams": ["IQQ", "HUA"], "score": [], "kickoff": "2015-05-01"}
+  , {"matchday": 17, "teams": ["UDC", "UC" ], "score": [], "kickoff": "2015-05-01"}
+  , {"matchday": 17, "teams": ["OHI", "CDA"], "score": [], "kickoff": "2015-05-01"}
+  , {"matchday": 17, "teams": ["SMA", "AI" ], "score": [], "kickoff": "2015-05-01"}
+  , {"matchday": 17, "teams": ["BAR", "PAL"], "score": [], "kickoff": "2015-05-01"}
+  , {"matchday": 17, "teams": ["ÑUB", "CBL"], "score": [], "kickoff": "2015-05-01"}
+
+  ]
+}
